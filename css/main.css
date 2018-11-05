@@ -24,7 +24,6 @@ html {
         'Apple Color Emoji',
         'Segoe UI Emoji',
         'Segoe UI Symbol';
-
 }
 
 main {
@@ -54,7 +53,7 @@ input.price#max::after {
 }
 
 header {
-    /*https://unsplash.com/photos/_bN4LHx-ogo*/
+/*    https://unsplash.com/photos/_bN4LHx-ogo*/
     background-image: url(/img/marcus-wallis-471436-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -63,62 +62,34 @@ header {
 
 }
 
-h1 {
 
+h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
         "a b c";
-
 }
 
 img {
     /*overflow: auto;tampoco*/
+    margin: 0.5rem;
     grid-area: a;
     width: 23%;
 }
 
-/*
-h1 span {
-grid-area: b;
-display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-flex-basis:50%;
-display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "a b ";
-
-    justify-content: flex-end;
-
-        float: right;
-    font-size: 3rem;
-
-    
-    display:;
-    align-content: flex-start;
-    text-align:right;
-
-    color: aqua;
- 
-}
-*/
-h1 span {
+span {
     text-shadow: 2px 2px black;
     color: #D3A198;
-    font-size: 3.2rem;
+    font-size: 3.8rem;
 }
 
 span:first-child {
     grid-area: b;
     flex-basis: 50%;
-
-
 }
 
 span:last-child {
-    margin-right: 2rem;
+    margin-right: 1rem;
     grid-area: c;
     flex-basis: 50%;
 
@@ -136,7 +107,6 @@ input#city {
     height: 1.6rem;
     font-size: 0.7em;
     color: hsl(275 8% 72%);
-    /*    width: 100%;*/
 }
 
 div.form-box.check-in {
@@ -150,7 +120,6 @@ input#check-in {
     height: 1.6rem;
     font-size: 0.7em;
     color: hsl(275 8% 72%);
-    /*    width: 100%;*/
 }
 
 div.form-box.check-out {
@@ -164,7 +133,6 @@ input#check-out {
     height: 1.6rem;
     font-size: 0.7em;
     color: hsl(275 8% 72%);
-    /*    width: 50%;*/
 }
 
 div.form-box.min-price {
@@ -206,11 +174,10 @@ button.search-btn {
 }
 
 
-
-
 /*************************************************
 MEDIA Q 1
 **************************************************/
+
 
 @media (min-width: 600px) and (max-width:999px) {
 
@@ -227,8 +194,6 @@ MEDIA Q 1
 
     div.form-box.place {
         grid-area: a;
-        /*        flex-basis: 100%;*/
-
     }
 
     div.form-box.check-in {
@@ -259,31 +224,28 @@ MEDIA Q 1
 /***************************************************
 MEDIA Q 2
 ****************************************************/
+
 @media (min-width: 1000px) {
 
     main {
-        /*            background-color: red;*/
         background-image: ;
         background-size: cover;
         background-position: right;
         display: flex;
         flex-direction: row;
-
     }
 
 
     header {
         flex-basis: 50%;
-        height: 350px;
-        /*            height: none;This one doesn't work?*/
+        height: auto;
+        /*Utilizo "auto" para que cubra todo*/
+        /* height: none;This one doesn't work?*/
     }
 
-    form {
 
+    form {
         flex-basis: 50%;
-    }
-
-    form {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
@@ -296,46 +258,19 @@ MEDIA Q 2
     div.form-box.place {
         grid-area: a;
     }
-
-
-    /*        flex-basis: 100%;
-
+    span{
+        font-size: 5rem;
     }
 
-    div.form-box.check-in {
-        padding: 0rem;
-        padding-left: 0.5rem;
-        grid-area: b;
-    }
 
-    div.form-box.check-out {
-        padding: 0rem;
-        padding-right: 0.5rem;
-        grid-area: c;
-
-    }
-
-    /*
-    div.form-box.search {
-    align-content:flex-end;
-}
-*/
     div.form-box.search {
         display: flex;
         flex-direction: row-reverse;
     }
 
     button.search-btn {
-        /*   align-content:flex-end;*/
+        /*   align-content:flex-end; no sirve*/
         margin: 1.1rem 0 0 0;
     }
 
 }
-
-
-/*
-questions
-
-1.favicon
-2.height
-*/
