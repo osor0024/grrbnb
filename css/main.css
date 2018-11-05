@@ -54,7 +54,7 @@ input.price#max::after {
 
 header {
 /*    https://unsplash.com/photos/_bN4LHx-ogo*/
-    background-image: url(/img/marcus-wallis-471436-unsplash.jpg);
+    background-image: url(../img/marcus-wallis-471436-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
